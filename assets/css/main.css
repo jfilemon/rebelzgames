@@ -1,3 +1,5 @@
+
+
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
@@ -56,7 +58,7 @@
 	}
 
 	.koppen_klein {
-	    font-size: 1.2em;
+	    font-size: 1.5em;
 	    letter-spacing: -2px;
 	    line-height: 1.25em;
 	    float: left;
@@ -1853,6 +1855,16 @@
 
 }
 
+@media screen and (max-width: 950px){
+
+#navigatie{
+	visibility: hidden;
+
+
+	}
+}
+
+
 .rebelz{
 	color: #fcd140;
 	list-style-type: none;
@@ -1869,7 +1881,7 @@
 
 .small{
     color: #fcd140;
-    font-size: 0.9em;
+    font-size: 1.3em;
     float: left;
 
 }
@@ -2013,7 +2025,7 @@
 			margin: 1em 0 0 0;
 			font-weight: 100;
 			padding: 0 8em 1em 8em;
-			text-shadow: 3px 3px 6px #555;
+			text-shadow: 3px 3px 6px #222;
 		}
 @media screen and (max-width: 600px) {
 header p {
@@ -2057,7 +2069,7 @@ header p {
 .buy{
  position: absolute;
  z-index: 10000;
- bottom: -13.4em;
+ bottom: -13.7em;
  padding: 10px 20px 10px 20px;
  color: #2a3403;
  background-color:#c1f20c; 
@@ -2075,7 +2087,7 @@ header p {
 
 @media screen and (max-width: 1663px) {
 	.buy{
-	     bottom: -11.8em;
+	     bottom: -13.4em;
 
 }
 }
@@ -2083,7 +2095,7 @@ header p {
 
 @media screen and (max-width: 1600px) {
 	.buy{
-	 bottom: -11.8em;
+	 bottom: -12em;
 	
 
 }
@@ -2097,9 +2109,9 @@ header p {
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1250px) {
 	.buy{
-	 bottom: -9.48em;
+	 bottom: -9.7em;
 }
 
 }
@@ -2114,7 +2126,21 @@ header p {
 
 @media screen and (max-width: 800px) {
 	.buy{
-	 bottom: -9.7em;
+	 bottom: -8.3em;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+	.buy{
+	 bottom: -6.65em;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+	.buy{
+	 bottom: -5.5em;
 }
 
 }
@@ -2171,7 +2197,8 @@ header p {
 }
 
 .video  {
-    margin-bottom: 1em;
+    margin-top: -2em;
+    
    
     }
 
@@ -2560,8 +2587,8 @@ header p {
 		}
 
 	.guy{
-    	bottom: 23.3em;
-    	left: 14em;
+    	bottom: 90.5%;
+    	width:90%;
 	    position: absolute;
 	}
 
@@ -2569,24 +2596,7 @@ header p {
 
 @media screen and (max-width: 1000px) {
 		.guy{
-		 bottom: 23.7em;
-    	left: 11.5em;
-	   
-	}
-}
-
-@media screen and (min-width: 1300px) {
-		.guy{
-		 bottom: 24.4em;
-    	left: 14em;
-	   
-	}
-}
-
-@media screen and (max-width: 1300px) {
-		.guy{
-		 bottom: 23.7em;
-    	left: 10em;
+		width:50%;
 	   
 	}
 }
@@ -2595,6 +2605,8 @@ header p {
 		.guy{
 		 visibility: hidden;	
 		}
+
+		
 }
 
 
@@ -2603,7 +2615,7 @@ header p {
 	.main {
 		position: relative;
 		margin: 0;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 
 		.main.fullscreen {
@@ -2615,11 +2627,59 @@ header p {
 			padding: 0em 0 3em 0;
 		}
 
+
+
 			.main.style1 h2 {
 				font-size: 4.25em;
 				line-height: 1em;
+				margin-top: 1em;
 				letter-spacing: -4px;
 			}
+
+@media screen and (max-width: 1200px) {
+			.main.style1 h2 {
+				margin-top: 3em;
+				
+			}
+}
+
+
+@media screen and (max-width: 1200px) {
+			.main.style1 h2 {
+				margin-top: 2.5em;
+				
+			}
+}
+
+@media screen and (max-width: 1000px) {
+			.main.style1 h2 {
+				margin-top: 1em;
+				
+			}
+}
+
+@media screen and (max-width: 900px) {
+			.main.style1 h2 {
+				margin-top: 1em;
+				
+			}
+}
+
+@media screen and (max-width: 700px) {
+			.main.style1 h2 {
+				margin-top: 0em;
+				
+			}
+}
+
+@media screen and (max-width: 950px) {
+			.main.style1 h2 {
+				font-size: 4.25em;
+				line-height: 1em;
+				margin-top: 1    .5em;
+				letter-spacing: -4px;
+			}
+}
 
 			.main.style1:before {
 				content: '';
@@ -2704,6 +2764,7 @@ header p {
 
 			.main.style3 .content > header {
 				margin-bottom: 2em;
+				margin-top: 4em;
 			}
 
 			.main.style3.primary {
@@ -3181,7 +3242,12 @@ header p {
 			font-size: 1.25em;
 
 		}
-
+@media screen and (max-width: 950px) {
+    #logo {
+        height: 7em;
+        	
+    }
+}
 
 		#nav ul {
 			margin: 0;
@@ -3212,10 +3278,7 @@ header p {
 				}
 			}
 
-@media screen and (max-width: 700px) {
-		#nav ul {
-			visibility: hidden;
-		}
+
 
 }
 
@@ -3886,7 +3949,7 @@ logo img {
 
 			#logo {
 				text-align: center;
-				position: relative;
+				
 				padding-left: 0.5em;
 				top: 0;
 				height: 8.5em;
@@ -3896,6 +3959,21 @@ logo img {
 				#logo a {
 					font-size: 1em;
 				}
+
+@media screen and (max-width: 800px){
+#nav ul li a {
+		visibility: hidden;
+	}
+
+
+#nav ul {
+background-color: initial;
+}
+
+}
+
+
+
 
 @media screen and (min-width: 400px) {
     #nav {
@@ -4025,28 +4103,23 @@ h5{
 
 
 .testje{
-	width: 10.5%;
-    height: 81em;
-    float: left;
-    bottom: -50em;
+	width: 19.5%;
+    height: 75%;
+    bottom: 0;
     vertical-align: middle;
-    margin-left: 26em;
+    margin-left: 30%;
     color: #fff !important;
     position: absolute;
-    background: url("../../images/fulls/infographic.alternatief.jpg");
-    /* background-position: bottom; */
+    background: url("../../images/thumbs/infographic.alternatief.png");
     background-repeat: no-repeat, no-repeat;
     -webkit-transition: bottom 0.5s;
-   transition: all .2s ease-in-out;
-
+    transition: all .2s ease-in-out;
 }
 
 .testje:hover {
-    bottom: -53em;
     transform: scale(1.1); 
-
 }
- @media screen and (max-width: 800px) {
+ @media screen and (max-width: 1200px) {
  	.testje{
  		visibility: hidden;
 
@@ -4054,11 +4127,16 @@ h5{
  }
 
 .tttt{
- text-align: center;
- margin-top: -3em;
- margin-left: -40.5px;
- color: #fff !important;
+     
+       margin-top: 120%;
+    width: 100%;
+    padding: 19px;
+    margin-left: -0%;
+
 }
+
+
+
 
    p.light {
     font-weight: 100;
@@ -4112,3 +4190,16 @@ h3.light {
 
 	}
 }
+
+.player:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+  }
+  .player:-moz-full-screen {
+    width: 100%;
+    height: 100%;
+  }
+
+  .film{
+  	
+  }
