@@ -67,6 +67,14 @@
 	    padding-left: 0.1em;
 	}
 
+	.koppen_klein:hover {
+	    color: #fcd140;
+	    -webkit-transition: 1s ease-in-out;
+	    -moz-transition: 1s ease-in-out;
+	    -o-transition: 1s ease-in-out;
+	}
+
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -308,7 +316,7 @@
 	}
 
 	.row.\30 \25 > * {
-		padding: 0px 0 0 0px;
+		padding: 0px 10px 0 0px;
 	}
 
 	.row.\30 \25 {
@@ -1851,9 +1859,10 @@
 		color: #fcd140;
 		font-weight: bold;
 		letter-spacing: 1px;
-		font-family: "Myriad Pro";
+		
 
 }
+
 
 @media screen and (max-width: 950px){
 
@@ -1909,7 +1918,6 @@
 	body {
 		background: #000;
 		height: 100%;
-		font-family: myriad pro;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		font-size: 18pt;
@@ -2067,81 +2075,21 @@ header p {
 
 /* Image */
 .buy{
+
  position: absolute;
- z-index: 10000;
- bottom: -13.7em;
- padding: 10px 20px 10px 20px;
- color: #2a3403;
- background-color:#c1f20c; 
- display: block;
- font-size: 24px;
+    z-index: 10000;
+    bottom: 0;
+    padding: 10px 20px 10px 20px;
+    color: #2a3403;
+    background-color: #c1f20c;
+    display: block;
+    font-size: 24px;
 
 }
-
 .buy:hover{
  background-color:#fff; 
  color: #b4de12;
  display: block;
-
-}
-
-@media screen and (max-width: 1663px) {
-	.buy{
-	     bottom: -13.4em;
-
-}
-}
-
-
-@media screen and (max-width: 1600px) {
-	.buy{
-	 bottom: -12em;
-	
-
-}
-}
-
-@media screen and (max-width: 1200px) {
-	.buy{
-	 bottom: -9.48em;
-}
-
-}
-
-
-@media screen and (max-width: 1250px) {
-	.buy{
-	 bottom: -9.7em;
-}
-
-}
-
-@media screen and (max-width: 1000px) {
-	.buy{
-	 bottom: -12.18em;
-}
-
-}
-
-
-@media screen and (max-width: 800px) {
-	.buy{
-	 bottom: -8.3em;
-}
-
-}
-
-@media screen and (max-width: 600px) {
-	.buy{
-	 bottom: -6.65em;
-}
-
-}
-
-@media screen and (max-width: 400px) {
-	.buy{
-	 bottom: -5.5em;
-}
 
 }
 
@@ -2195,24 +2143,26 @@ header p {
 
 
 }
-
-.video  {
-    margin-top: -2em;
-    
+#video  {
    
+    z-index: -100;
+    width: 60%;
+    margin: auto;
     }
+
+
 
 .video:hover  {
-      opacity: 0.5;
-    }
-    @media screen and (max-width: 600px) {
-.video  {
-    
-    }
-.video img{
-	width:100px;
-
+	opacity: 0.5;
 }
+@media screen and (max-width: 600px) {
+	.video  {
+	    
+	 }
+	.video img{
+		width:100px;
+
+	}
 
 }
 	.image {
@@ -2593,17 +2543,24 @@ header p {
 	}
 
 
-
-@media screen and (max-width: 1000px) {
-		.guy{
-		width:50%;
+@media screen and (max-width: 2000px) {
+		.guy img{
+		width:40%;
 	   
 	}
 }
 
 @media screen and (max-width: 800px) {
-		.guy{
-		 visibility: hidden;	
+		.guy img{
+		 width: 50%;
+		}	
+}
+
+
+@media screen and (max-width: 600px) {
+		.guy img{
+		 width: 60%;
+
 		}
 
 		
@@ -2725,6 +2682,8 @@ header p {
 				width: 35%;
 				display: inline-block;
 				vertical-align: middle;
+
+
 			}
 
 			.main.style2.left:after {
@@ -2732,10 +2691,12 @@ header p {
 				display: inline-block;
 				vertical-align: middle;
 				height: 100%;
+
 			}
 
 			.main.style2.left .content {
 				left: 0;
+				border-radius: 0 20px 20px 0;
 			}
 
 			.main.style2.right:before {
@@ -2747,6 +2708,7 @@ header p {
 
 			.main.style2.right .content {
 				left: 65%;
+				border-radius: 20px 0 0 20px;
 			}
 
 			.main.style2.inactive.left .content {
@@ -2786,7 +2748,7 @@ header p {
 			color: #fcd140;
    			list-style-type: none;
    			text-decoration: none;
-   			padding: 8px;
+   			
 		}
 
 		.dark .button.style2 {
@@ -3268,6 +3230,10 @@ header p {
 					line-height: 3em;
 					padding: 0 0.5em 0 0.5em;
 					outline: 0;
+				}
+
+				#nav ul li a:hover {
+					color: #fff;
 				}
 
 @media screen and (max-width: 1300px) {
@@ -4050,6 +4016,7 @@ background-color: initial;
 .mad{
     -webkit-transform: rotate(90deg);
     transform: rotate90deg);
+	-ms-transform: rotate(90deg); 
     position: absolute;
     margin: -108px;
     text-indent: 1.5em;
@@ -4101,39 +4068,28 @@ h5{
 
 }
 
-
-.testje{
+.remodal_content{
+  position: absolute;
 	width: 19.5%;
     height: 75%;
     bottom: 0;
     vertical-align: middle;
     margin-left: 30%;
-    color: #fff !important;
-    position: absolute;
-    background: url("../../images/thumbs/infographic.alternatief.png");
-    background-repeat: no-repeat, no-repeat;
-    -webkit-transition: bottom 0.5s;
-    transition: all .2s ease-in-out;
 }
 
-.testje:hover {
-    transform: scale(1.1); 
+
+.remodal_content2{
+  float: left;
 }
+
  @media screen and (max-width: 1200px) {
- 	.testje{
+ 	.remodal_content{
  		visibility: hidden;
 
  	}
  }
 
-.tttt{
-     
-       margin-top: 120%;
-    width: 100%;
-    padding: 19px;
-    margin-left: -0%;
 
-}
 
 
 
