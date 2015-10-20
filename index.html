@@ -8,9 +8,10 @@
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/video.css" />
-	<link rel="stylesheet" "alternate stylesheet"  href="assets/css/hamburger.css"  MEDIA="screen" />
+
 	 <script src="asssets/js/jquery-loader.js"></script>
     <link rel="stylesheet" href="assets/css/remodal.css">
+    <link rel="stylesheet" href="assets/css/hamburger.css">
     <link rel="stylesheet" href="assets/css/remodal-default-theme.css">
     <script src="asssets/js/remodal.js"></script>
 
@@ -29,20 +30,36 @@
   <body>
   	<!-- Header -->
   	<header id="header">
-  		<nav class="mobile" >
-  			<button></button>
-  			<div>
-  				<a href="#intro">HOME</a>
-  				<a href="#two">WE ARE</a>
-  				<a href="#three">NEWS</a>
-  				<a href="#one">MADPONG</a>
-  				<a href="#work">WEBSHOP</a>
-  				<a href="#five">TV FORMAT</a>
-  				<a href="#four">GALLERY</a>
-  				<a href="http://spin2play.com/">MOBILE APP</a>
-  				<a href="#contact">CONTACT</a>
-  			</div>
-  		</nav>
+<div class="shy-menu">
+  <a class="shy-menu-hamburger">
+    <span class="layer top"></span>
+    <span class="layer mid"></span>
+    <span class="layer btm"></span>
+    </a>
+  <div class="shy-menu-panel">
+  <ul>
+            <li><a href="#intro">HOME</a></li>
+            <li><a href="#two">WE ARE</a></li>
+            <li><a href="#three">NEWS</a></li>
+            <li><a href="#one">MADPONG</a></li>
+          <!--  <li><a href="#work">WEBSHOP</a></li>-->
+            <li><a href="#five">TV FORMAT</a></li>
+            <li><a href="#four">GALLERY</a></li>
+            <li><a href="http://spin2play.com/">MOBILE APP</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+  </div>
+</div>
+
+<div class="menu open">
+  <a class="hamburger">
+    <span class="layer top"></span>
+    <span class="layer mid"></span>
+  <span class="layer btm"></span>
+  </a>
+</div>
+     
+  	
   		<!-- Logo -->
   		<h1 id="logo"><img src="images/thumbs/logo.png" alt="" height="" width="170" /></a></h1>
   		<!-- Nav -->
@@ -53,7 +70,7 @@
   					<li><a href="#two"><span class="white bold">/// </span>WE ARE</a></li>
   					<li><a href="#three"><span class="white bold">/// </span>NEWS</a></li>
   					<li><a href="#one"><span class="white bold">/// </span>MADPONG</a></li>
-  					<li><a href="#work"><span class="white bold">/// </span>WEBSHOP</a></li>
+  			<!--		<li><a href="#work"><span class="white bold">/// </span>WEBSHOP</a></li>-->
   					<li><a href="#five"><span class="white bold">/// </span>TV FORMAT</a></li>
   					<li><a href="#four"><span class="white bold">/// </span>GALLERY</a></li>
   					<li><a href="http://spin2play.com/"><span class="white bold">/// </span>MOBILE APP</a></li>
@@ -112,22 +129,26 @@
   		<a href="#three" class="button style2 down anchored">Next</a>
   	</section>
   	<section id="three" class="main style2 left dark fullscreen">
+
   		<div class="inscrhijven">
-  			<form method="post" action="#">
   				<h3 class="light">STAY UP TO DATE!</h3>
-  				<input type="email" name="email" placeholder="Email" class="emailtje"/>
   				<ul class="actions">
-  					<li><input type="submit" value="SEND MESSAGE" /></li>
-  				</ul>
-  			</form>
+          <li><a href="https://twitter.com/rebelzgames" class="icon fa-twitter fa-2x" target="blank"><span class="label">Twitter</span></a></li>
+          <li><a href="https://www.facebook.com/Rebelz-Games-132016243523838/" class="icon fa-facebook fa-2x" target="blank"><span class="label">Facebook</span></a></li>
+          <li><a href="https://instagram.com/rebelzgames/" class="icon fa-instagram fa-2x" target="blank"><span class="label">Instagram</span></a></li>
+          
+        </ul>
+  			
   		</div>
+    
   		<div class="content box style2">
   			<header>
   				<h2>NEWS</h2>
   			</header>
   			<img src="video/project-image.png" title="The Anonymous Red" alt="" width="60%" /></a>
   			<h2 class="light">MadPong coming soon!</h2>
-  			<p class="light">MadPong the newest creation of Rebelz Games will be available to the market from 3 November 2015. MadPong will be launched through a Kickstarter campaign.</p>
+  			<p class="light">MadPong, the latest creation of Rebelz Games, will be available on the market starting the 3rd of November 2015. MadPong will be launched through a Kickstarter campaign.</p>
+
   		</div>
   	</div>
   	<a href="#one" class="button style2 down anchored">Next</a>
@@ -185,9 +206,10 @@
   			</ul>
   		</div>
   	</div>
-  	<a href="#work" class="button style2 down anchored">Next</a>
+  	<a href="#five" class="button style2 down anchored">Next</a>
   </section>
   <!-- Work -->
+      <!-- Lightbox Gallery
   <section id="work" class="main style3 primary">
   	<div class="content container">
   		<header>
@@ -196,14 +218,14 @@
   				beautiful or smile 24/7" in Google. If you find images of people that fit these words, it's probably us: 'The King of Party Games'. Have fun playing!
   			</p>
   		</header>
-  		<!-- Lightbox Gallery  -->
+    
   		<div class="container 75% gallery">
   			<div class="row 0% images">
   				<div class="6u 12u(mobile)">
   					<a href="images/fulls/product1.png" class="image fit from-left">
   						<div class="buy">BUY</div>
   						<div class="info">INFO</div>
-  						<img src="images/thumbs/tester.png" title="The Anonymous Red" alt="" />
+  						<img src="images/thumbs/tester.png" title="" alt="" />
   					</a>
   					<ul>
   						<div class="yellow_text">
@@ -216,7 +238,7 @@
   					<a href="images/fulls/product1.png" class="image fit from-left">
   						<div class="buy">BUY</div>
   						<div class="info">INFO</div>
-  						<img src="images/thumbs/madwish_original_board_game_two.png" title="Airchitecture II" alt="" />
+  						<img src="images/thumbs/madwish_original_board_game_two.png" title="" alt="" />
   					</a>
   					<ul>
   						<div class="yellow_text">
@@ -231,7 +253,7 @@
   					<a href="images/fulls/product9.png" class="image fit from-left">
   						<div class="buy">BUY</div>
   						<div class="info">INFO</div>
-  						<img src="images/thumbs/madwish_party_joy_game.png" title="Air Lounge" alt="" />
+  						<img src="images/thumbs/madwish_party_joy_game.png" title="" alt="" />
   					</a>
   					<ul>
   						<div class="yellow_text">
@@ -244,7 +266,7 @@
   					<a href="images/fulls/product2.png" class="image fit from-left">
   						<div class="buy">BUY</div>
   						<div class="info">INFO</div>
-  						<img src="images/thumbs/rebelz_original_board_game.png" title="Carry on" alt="" />
+  						<img src="images/thumbs/rebelz_original_board_game.png" title="" alt="" />
   					</a>
   					<ul>
   						<div class="yellow_text">
@@ -259,7 +281,7 @@
   					<a href="images/fulls/product10.png" class="image fit from-left">
   						<div class="buy">BUY</div>
   						<div class="info">INFO</div>
-  						<img src="images/thumbs/madwish_festival_board_game.png" title="The sparkling shell" alt="" />
+  						<img src="images/thumbs/madwish_festival_board_game.png" title="" alt="" />
   					</a>
   					<ul>
   						<div class="yellow_text">
@@ -272,7 +294,7 @@
   					<a href="images/fulls/product7.png" class="image fit from-left">
   						<div class="buy">BUY</div>
   						<div class="info">INFO</div>
-  						<img src="images/thumbs/madwish_beach_board_game.png" title="Bent IX" alt="" />
+  						<img src="images/thumbs/madwish_beach_board_game.png" title="" alt="" />
   					</a>
   					<ul>
   						<div class="yellow_text">
@@ -286,6 +308,7 @@
   	</div>
   	<a href="#five" class="button style2 down anchored">Next</a>
   </section>
+  -->
   <section id="five" class="main style3 primary">
   	<div class="content container">
   		<header>
@@ -298,7 +321,7 @@
   		<div class="container 75% gallery">
   			<div class="row 0% images">
   				<div class="6u 12u(mobile)">
-  					<a href="images/thumbs/battle_to_date.jpg" class="image fit from-left"><img src="images/thumbs/battle_to_date.jpg" title="" alt="" /></a>
+  					<a href="images/thumbs/battle_to_date.jpg" class="image fit from-left"><img src="images/thumbs/battle_to_date.jpg" title="Dating show" alt="" /></a>
   					<ul>
   						<div class="yellow_text">
   							<li><span class="white bold">/// </span>BATTLE2DATE
@@ -307,7 +330,7 @@
   					</ul>
   				</div>
   				<div class="6u 12u(mobile)">
-  					<a href="images/thumbs/unspoken_words.jpg" class="image fit from-right"><img src="images/thumbs/unspoken_words.jpg" title="UNSPOKEN WORDS" alt="" /></a>
+  					<a href="images/thumbs/unspoken_words.jpg" class="image fit from-right"><img src="images/thumbs/unspoken_words.jpg" title="Talk show" alt="" /></a>
   					<ul>
   						<div class="yellow_text">
   							<li><span class="white bold">/// </span>UNSPOKEN WORDS
@@ -318,7 +341,7 @@
   			</div>
   			<div class="row 0% images">
   				<div class="6u 12u(mobile)">
-  					<a href="images/thumbs/back_to_the_teacher.jpg" class="image fit from-left"><img src="images/thumbs/back_to_the_teacher.jpg" title="BACK TO THE TEACHER" alt="" /></a>
+  					<a href="images/thumbs/back_to_the_teacher.jpg" class="image fit from-left"><img src="images/thumbs/back_to_the_teacher.jpg" title="Quiz show" alt="" /></a>
   					<ul>
   						<div class="yellow_text">
   							<li><span class="white bold">/// </span>BACK TO THE TEACHER
@@ -327,7 +350,7 @@
   					</ul>
   				</div>
   				<div class="6u 12u(mobile)">
-  					<a href="images/thumbs/u_cant_touch_this.jpg" class="image fit from-right"><img src="images/thumbs/u_cant_touch_this.jpg" title="U CAN'T TOUCH THIS" alt="" /></a>
+  					<a href="images/thumbs/u_cant_touch_this.jpg" class="image fit from-right"><img src="images/thumbs/u_cant_touch_this.jpg" title="Quiz show" alt="" /></a>
   					<ul>
   						<div class="yellow_text">
   							<li><span class="white bold">/// </span>U CAN'T TOUCH THIS
@@ -428,7 +451,7 @@
   						Even though they are all different, all Rebelz are made from the same shape, they’re ONE! Choose which Rebel fits you the best.
   					</p>
   				</header>
-  				<span class="white bold">\\\</span><a href="#"><strong>WATCH THE REBELZ MOVIE</a><span class="white bold">///</span>
+  				<span class="white bold">\\\</span><strong>WATCH THE REBELZ MOVIE<span class="white bold">///</span>
   				<div id="video">
   				<video  id="my_video_1" class="video-js vjs-default-skin"  controls preload="none" poster='video/rebelz_grafitti.png' data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
   					<source src="video/rebelz_cartoon.mp4" type='video/mp4' />
@@ -440,21 +463,21 @@
   				<!-- Lightbox Gallery  -->
   				<div class="container 75% gallery">
   					<div class="row 0% images">
-  						<div class="4u 12u(mobile)"><a href="images/fulls/coming_soon.png" class="image fit from-left"><img src="images/thumbs/bill.png" title="Bill" alt="" /></a></div>
+  						<div class="4u 12u(mobile)"><a href="images/fulls/Bill.png" class="image fit from-left"><img src="images/thumbs/bill.png" title="Bill" alt="" /></a></div>
   						<div class="4u 12u(mobile)"><a href="images/fulls/jacky.png" class="image fit from-right"><img src="images/thumbs/jacky.png" title="Jacky" alt="" /></a></div>
-  						<div class="4u 12u(mobile)"><a href="images/fulls/coming_soon.png" class="image fit from-left"><img src="images/thumbs/ziggy.png" title="Ziggy" alt="" /></a></div>
+  						<div class="4u 12u(mobile)"><a href="images/fulls/Ziggy.png" class="image fit from-left"><img src="images/thumbs/ziggy.png" title="Ziggy" alt="" /></a></div>
   					</div>
   					<div class="row 0% images">
   						<div class="4u 12u(mobile)"><a href="images/fulls/Mimi.png" class="image fit from-right"><img src="images/thumbs/mimi.png" title="Mimi" alt="" /></a></div>
-  						<div class="4u 12u(mobile)"><a href="images/fulls/coming_soon.png" class="image fit from-left"><img src="images/thumbs/rokkit.png" title="Rokkit" alt="" /></a></div>
+  						<div class="4u 12u(mobile)"><a href="images/fulls/Rokkit.png" class="image fit from-left"><img src="images/thumbs/rokkit.png" title="Rokkit" alt="" /></a></div>
   						<div class="4u 12u(mobile)"><a href="images/fulls/Sunset.png" class="image fit from-right"><img src="images/thumbs/sunset.png" title="Sunset" alt="" /></a></div>
   					</div>
   					<div class="row 0% images">
   					</div>
   					<div class="row 0% images">
-  						<div class="4u 12u(mobile)"><a href="images/fulls/coming_soon.png" class="image fit from-left"><img src="images/thumbs/zap.png" title="Zap" alt="" /></a></div>
+  						<div class="4u 12u(mobile)"><a href="images/fulls/Zap.png" class="image fit from-left"><img src="images/thumbs/zap.png" title="Zap" alt="" /></a></div>
   						<div class="4u 12u(mobile)"><a href="images/fulls/Lozza.png" class="image fit from-right"><img src="images/thumbs/lozza.png" title="Lozza" alt="" /></a></div>
-  						<div class="4u 12u(mobile)"><a href="images/fulls/coming_soon.png" class="image fit from-left"><img src="images/thumbs/dre.png" title="Dre" alt="" /></a></div>
+  						<div class="4u 12u(mobile)"><a href="images/fulls/Dre.png" class="image fit from-left"><img src="images/thumbs/dre.png" title="Dre" alt="" /></a></div>
   					</div>
   					<div class="row 0% images">
   						<div class="4u 12u(mobile)"><a href="images/fulls/Misty.png" class="image fit from-right"><img src="images/thumbs/misty.png" title="Misty" alt="" /></a></div>
@@ -478,23 +501,51 @@
   					<!-- Contact Form -->
   					<form method="post" action="#">
   						<div class="row 50%">
-  							<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-  							<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-  						</div>
-  						<div class="row 50%">
-  							<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-  						</div>
-  						<div class="row">
-  							<div class="12u">
-  								<ul class="actions">
-  									<li><input type="submit" value="SEND MESSAGE" /></li>
+          				Address:<br>
+        Creative factory<br>
+        Maashaven Zuidzijde 2<br>
+        3081 AE Rotterdam <br>
+<br>
+Questions, notices, requests, suggestions and ideas can be mailed to
+
+<div class=linkje>
+<a href="mailto:info@rebelzgames.com">info@rebelzgames.com</a></div>
   								</ul>
   							</div>
   						</div>
   					</form>
   				</div>
   			</div>
-  		</section>
+  		</section><!-- 
+      <section id="contact" class="main style3 secondary">
+        <div class="content container">
+          <header>
+            <div class="header_inside">
+              <h2>Say hello, to my little friend!</h2>
+            </div>
+          </header>
+          <div class="box container 75%">
+            <div class="guy"><img src="images/fulls/dare_guy.svg"></div>
+            
+            <form method="post" action="#">
+              <div class="row 50%">
+                <div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                <div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
+              </div>
+              <div class="row 50%">
+                <div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+              </div>
+              <div class="row">
+                <div class="12u">
+                  <ul class="actions">
+                    <li><input type="submit" value="SEND MESSAGE" /></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section> -->
   		<!-- Footer -->
   		<footer id="footer">
   			<!-- Icons -->
@@ -525,18 +576,14 @@
   		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   		<script src='http://vjs.zencdn.net/5-unsafe/video.js'></script>
   		<script src="assets/js/index.js"></script>
-  		<script src="assets/js/hamburger.js"></script>
   		<script src="assets/js/video.js"></script>
+      <script src="assets/js/jquery-2.1.1.js"></script>
+      <script src="assets/js/hamburger.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 
-  		<script type="text/javascript">
-	  		// $( document ).ready(function() {
-	  			// videojs("my_video_1").ready(function(){
-	  				// var video = this;
-	  				// $('#my_video_1').on('click', function(e) {
-	  					// $(this).find('.vjs-fullscreen-control').trigger('click');
-	  				// });
-	  			// });
-	  		// });
-  		</script>
+
+
+
   	</body>
   	</html>

@@ -68,7 +68,7 @@
 	}
 
 	.koppen_klein:hover {
-	    color: #fcd140;
+	    color: red;
 	    -webkit-transition: 1s ease-in-out;
 	    -moz-transition: 1s ease-in-out;
 	    -o-transition: 1s ease-in-out;
@@ -1992,7 +1992,8 @@
 		-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
-		color: #000;
+		color: #fff;
+		 text-decoration: none;
 	}
 
 	sub {
@@ -2076,8 +2077,9 @@ header p {
 /* Image */
 .buy{
 
- position: absolute;
+	position: absolute;
     z-index: 10000;
+    font-weight: 600;
     bottom: 0;
     padding: 10px 20px 10px 20px;
     color: #2a3403;
@@ -2151,7 +2153,17 @@ header p {
     }
 
 
+.linkje a{
+	color: #444;
+	text-align: center;
 
+}
+
+.linkje{
+	margin: auto;
+	width: 100%;
+
+}
 .video:hover  {
 	opacity: 0.5;
 }
@@ -2448,11 +2460,12 @@ header p {
 			input[type="reset"].down.anchored,
 			.button.down.anchored,
 			button.down.anchored {
-				bottom: 0;
-				border-bottom: 0;
-				border-radius: 3em 3em 0 0;
-				height: 4.5em;
-				margin-left: -2.5em;
+				    bottom: 1em;
+				    /* border-bottom: 0; */
+				    /* border-radius: 3em 3em 0 0; */
+				    /* height: 4.5em; */
+				    margin-left: -2.5em;
+				}
 			}
 
 @media screen and (max-width: 745px) {
@@ -3454,6 +3467,7 @@ logo img {
 			transform: translateZ(0);
 			position: relative;
 			bottom: 0;
+			height: 525px;
 		}
 
 		#contact.inactive .box {
@@ -4015,7 +4029,8 @@ background-color: initial;
 
 .mad{
     -webkit-transform: rotate(90deg);
-    transform: rotate90deg);
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg) 
 	-ms-transform: rotate(90deg); 
     position: absolute;
     margin: -108px;
@@ -4115,19 +4130,20 @@ h3.light {
 
 .inscrhijven{
 	position: absolute;
-	position: absolute;
-    margin-left: 50em;
+    margin-left: 58%;
+    width: 30%;
     background-color: #111;
     padding: 80px;
-    margin-top: 10em;
+    margin-top: 145px;
     border-radius: 15px;
 }
 
 
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1000px) {
 	.inscrhijven{
-   		 margin-left: 38em;
+   		 visibility: hidden;
 		}
 }
 
