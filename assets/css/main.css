@@ -316,7 +316,8 @@
 	}
 
 	.row.\30 \25 > * {
-		padding: 0px 10px 0 0px;
+		padding: 5px;
+
 	}
 
 	.row.\30 \25 {
@@ -453,8 +454,6 @@
 		margin-left: 0;
 	}
 
-
-
 	.\35 u, .\35 u\24 {
 		width: 41.6666666667%;
 		clear: none;
@@ -543,17 +542,6 @@
 	.\-1u {
 		margin-left: 8.33333%;
 	}
-
-
-					
-
-	@media screen and (min-width: 4000px) {
-    
-   
-   
-
-					}
-
 
 	@media screen and (max-width: 1920px) {
 
@@ -1498,7 +1486,7 @@
 		}
 
 		.\31 2u\28mobile\29, .\31 2u\24\28mobile\29 {
-			width: 50%;
+			width: 100%;
 			clear: none;
 			margin-left: 0;
 		}
@@ -1883,10 +1871,6 @@
 
 }
 
-.inside_text{
-	float:left;
-	padding:10px;
-}
 
 .small{
     color: #fcd140;
@@ -2146,9 +2130,7 @@ header p {
 
 }
 #video  {
-   
-    z-index: -100;
-    width: 60%;
+    width: 70%;
     margin: auto;
     }
 
@@ -2167,15 +2149,11 @@ header p {
 .video:hover  {
 	opacity: 0.5;
 }
-@media screen and (max-width: 600px) {
-	.video  {
-	    
+@media screen and (max-width: 950px) {
+	#video  {
+	    width: 100%;
 	 }
-	.video img{
-		width:100px;
-
-	}
-
+	
 }
 	.image {
 		position: relative;
@@ -2550,7 +2528,7 @@ header p {
 		}
 
 	.guy{
-    	bottom: 90.5%;
+    	bottom: 84%;
     	width:90%;
 	    position: absolute;
 	}
@@ -2565,14 +2543,14 @@ header p {
 
 @media screen and (max-width: 800px) {
 		.guy img{
-		 width: 50%;
+		 width: 37%;
 		}	
 }
 
 
 @media screen and (max-width: 600px) {
 		.guy img{
-		 width: 60%;
+		 width: 51%;
 
 		}
 
@@ -3186,7 +3164,12 @@ header p {
 	body {
 		padding-top: 3em;
 	}
+@media screen and (max-width: 750px) {
+	#logo img{
+		width:30%;
+}
 
+}
 
 @media screen and (min-width: 400px) {
     #logo {
@@ -3467,7 +3450,7 @@ logo img {
 			transform: translateZ(0);
 			position: relative;
 			bottom: 0;
-			height: 525px;
+		
 		}
 
 		#contact.inactive .box {
@@ -3794,6 +3777,8 @@ logo img {
 				left: -60%;
 			}
 
+
+
 		/* Footer */
 
 			#footer {
@@ -3932,7 +3917,7 @@ logo img {
 				
 				padding-left: 0.5em;
 				top: 0;
-				height: 8.5em;
+				height: auto;
 				line-height: 2.5em;
 			}
 
@@ -3950,10 +3935,21 @@ logo img {
 background-color: initial;
 }
 
+
+
 }
 
 
+@media screen and (max-width: 1000px){
+.main.style2.right .content {
+	border-radius: 20px;
+}
 
+.main.style2.left .content {
+	border-radius: 20px;
+}
+
+}
 
 @media screen and (min-width: 400px) {
     #nav {
@@ -4093,9 +4089,7 @@ h5{
 }
 
 
-.remodal_content2{
-  float: left;
-}
+
 
  @media screen and (max-width: 1200px) {
  	.remodal_content{
@@ -4111,12 +4105,11 @@ h5{
 
    p.light {
     font-weight: 100;
-    text-align: left;
 }
 
  h2.light {
     
-    text-align: left;
+ 
     font-size: 35px;
     padding-bottom:20px;
 }
