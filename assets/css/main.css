@@ -2129,11 +2129,26 @@ header p {
 
 
 }
-#video  {
+#video, .main-video {
     width: 70%;
     margin: auto;
-    }
+}
 
+.infographic {
+	position: absolute;
+	width: 310px;
+	top: 200px;
+	left: 30px;
+}
+
+.infographic .small.bold {
+	color: #fff;
+	margin-right: 10px;
+}
+
+.infographic .koppen_klein {
+	color: #FCD748;
+}
 
 .linkje a{
 	color: #444;
@@ -2527,35 +2542,11 @@ header p {
 			/* padding: 3.5em 2.5em 3.5em 2.5em; */
 		}
 
-	.guy{
-    	bottom: 84%;
-    	width:90%;
-	    position: absolute;
-	}
-
-
-@media screen and (max-width: 2000px) {
-		.guy img{
+	.guy img{
 		width:40%;
-	   
+		display: block;
+		margin: auto;
 	}
-}
-
-@media screen and (max-width: 800px) {
-		.guy img{
-		 width: 37%;
-		}	
-}
-
-
-@media screen and (max-width: 600px) {
-		.guy img{
-		 width: 51%;
-
-		}
-
-		
-}
 
 
 /* Main */
@@ -3434,6 +3425,9 @@ logo img {
 	#contact {
 		padding-bottom: 0;
 		overflow: hidden;
+	}
+	#contact header {
+		margin-top: 0;
 	}
 #login {
 		
