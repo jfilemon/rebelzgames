@@ -1,38 +1,30 @@
-
 $(function() {
-  
-  initDropDowns($("div.shy-menu"));
-
+    initDropDowns($("div.shy-menu"));
 });
 
 function initDropDowns(allMenus) {
 
-  allMenus.children(".shy-menu-hamburger").on("click", function() {
-    
-    var thisTrigger = jQuery(this),
-      thisMenu = thisTrigger.parent(),
-      thisPanel = thisTrigger.next();
+    allMenus.children(".shy-menu-hamburger").on("click", function() {
+        var thisTrigger = jQuery(this),
+            thisMenu = thisTrigger.parent(),
+            thisPanel = thisTrigger.next();
 
-    if (thisMenu.hasClass("is-open")) {
+        if (thisMenu.hasClass("is-open")) {
+            thisMenu.removeClass("is-open");
+            jQuery(document).off("click");
+            thisPanel.off("click");
+        } else {
+            allMenus.removeClass("is-open");
+            thisMenu.addClass("is-open");
 
-          thisMenu.removeClass("is-open");
-      
-          jQuery(document).off("click");                                 
-          thisPanel.off("click");
+            jQuery(document).on("click", function() {
+                allMenus.removeClass("is-open");
+            });
+            thisPanel.on("click", function(e) {
+                e.stopPropagation();
+            });
+        }
 
-    } else {      
-      
-        allMenus.removeClass("is-open");  
-      thisMenu.addClass("is-open");
-  
-      jQuery(document).on("click", function() {
-        allMenus.removeClass("is-open");
-      });
-      thisPanel.on("click", function(e) {
-        e.stopPropagation();
-      });
-    }
-    
-    return false;
-  });
+        return false;
+    });
 }
