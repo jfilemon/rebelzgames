@@ -2,9 +2,9 @@ $(function() {
     initDropDowns($("div.shy-menu"));
 });
 
-function initDropDowns($menus) {
+function initDropDowns($menu) {
 
-    $menus.children(".shy-menu-hamburger").on("click", function() {
+    $menu.children(".shy-menu-hamburger").on("click", function() {
         var thisTrigger = jQuery(this),
             thisMenu = thisTrigger.parent(),
             thisPanel = thisTrigger.next();
@@ -14,11 +14,11 @@ function initDropDowns($menus) {
             jQuery(document).off("click");
             thisPanel.off("click");
         } else {
-            $menus.removeClass("is-open");
+            $menu.removeClass("is-open");
             thisMenu.addClass("is-open");
 
             jQuery(document).on("click", function() {
-                $menus.removeClass("is-open");
+                $menu.removeClass("is-open");
             });
             thisPanel.on("click", function(e) {
                 e.stopPropagation();
@@ -28,7 +28,7 @@ function initDropDowns($menus) {
         return false;
     });
 
-    $menus.find(".shy-menu-panel a").on("click", function() {
-        $menus.children(".shy-menu-hamburger").trigger('click');
+    $menu.find(".shy-menu-panel a").on("click", function() {
+        $menu.children(".shy-menu-hamburger").trigger('click');
     });
 }
