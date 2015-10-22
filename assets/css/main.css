@@ -1,5 +1,5 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("font-awesome.min.css");
+/*@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");*/
+/*@import url("font-awesome.min.css");*/
 
 /*
 	Big Picture by HTML5 UP
@@ -2442,14 +2442,13 @@ header p {
 @media screen and (max-width: 600px) {
     header p {
         display: block;
-        margin: 1em 0 0 0em;
+        margin: 1em 0 0 0;
         font-weight: 100;
-        padding: 0em 1em 0em;
+        padding: 0 1em 0;
     }
 
 }
 
-}
 footer {
     margin-top: 2em;
 }
@@ -2874,8 +2873,6 @@ button.down.anchored {
     margin-left: -2.5em;
 }
 
-}
-
 @media screen and (max-width: 745px) {
     input[type="button"].down.anchored,
     input[type="submit"].down.anchored,
@@ -3015,7 +3012,7 @@ button.style2.down {
 
 @media screen and (max-width: 700px) {
     .main.style1 h2 {
-        margin-top: 0em;
+        margin-top: 0;
 
     }
 }
@@ -3024,7 +3021,7 @@ button.style2.down {
     .main.style1 h2 {
         font-size: 4.25em;
         line-height: 1em;
-        margin-top: 1 .5em;
+        margin-top: 1.5em;
         letter-spacing: -4px;
     }
 }
@@ -3642,63 +3639,60 @@ body {
     }
 }
 
-}
-
 @media screen and (max-width: 600px) {
-    logo img {
+    #logo img {
         width: 140px;
-
     }
 }
 
 /* Intro */
 #intro {
 
-    background: url("images/"), url("../../images/fulls/party_people3.svg");
+    background: url("../../images/fulls/party_people3.svg"), url("../../images/black.gif");
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 
 }
 
 /* One */
 
 #one {
-    background: url("images/"), url("../../images/fulls/party_people3.svg");
+    background: url("../../images/fulls/party_people3.svg"), url("../../images/black.gif");
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 
 }
 
 /* Two */
 
 #two {
-    background: url("images/"), url("../../images/fulls/party_people3.svg");
+    background: url("../../images/fulls/party_people3.svg"), url("../../images/black.gif");
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 }
 
 /* Three */
 
 #three {
-    background: url("images/"), url("../../images/fulls/party_people3.svg");
+    background: url("../../images/fulls/party_people3.svg"), url("../../images/black.gif");
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 }
 
 #four {
-    background: url("images/"), url("../../images/fulls/promotion_girls.svg");
+    background: url("../../images/fulls/promotion_girls.svg"), url("../../images/black.gif");
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 }
 
 #five {
@@ -3710,11 +3704,11 @@ body {
 }
 
 #six {
-    background: url("images/"), url("../../images/fulls/hills.svg");
+    background: url("../../images/fulls/hills.svg"), url("../../images/black.gif");
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat, repeat;
 }
 
 @media screen and (max-width: 740px) {
@@ -3728,25 +3722,21 @@ body {
     }
 
     #six {
-        background: url("images/"), url("../../images/fulls/hills.svg");
+        background: url("../../images/fulls/hills.svg"), url("../../images/black.gif");
         background-size: 610%;
         background-attachment: fixed;
         background-position: bottom;
-        background-repeat: repeat, no-repeat;
+        background-repeat: no-repeat, repeat;
     }
 
     @media screen and (max-width: 800px) {
         .rebelz {
-
             visibility: hidden;
             width: 0;
             height: 0;
 
         }
     }
-
-
-
 
     /* One */
     #one {
@@ -3875,7 +3865,6 @@ body {
 }
 
 #footer a:hover {
-    color: #bbb;
     color: #b9babb;
 }
 
@@ -4410,7 +4399,7 @@ body.is-touch .poptrox-popup .closer {
 .mad {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -moz-transform: rotate(90deg)
+    -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     position: absolute;
     margin: -108px;
