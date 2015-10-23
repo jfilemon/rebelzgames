@@ -4012,6 +4012,7 @@ body.is-touch .poptrox-popup .closer {
     position: absolute;
     top: 191px;
     left: 0;
+    font-size: 17px;
     background-color: #DA221D;
     background-color: rgba(218, 34, 29, .8);
     -moz-transition: width 0.5s, height 0.5s;
@@ -4058,6 +4059,63 @@ body.is-touch .poptrox-popup .closer {
 
 .foto:hover {
     opacity: 0.9;
+}
+
+.video-trigger {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    display: inline-block;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.video-trigger img {
+    width: 100%;
+}
+
+.play-button {
+    outline: 0;
+    position: absolute;
+    background-color: #2B333F;
+    background-color: rgba(43, 51, 63, 0.7);
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    width: 90px;
+    height: 45px;
+    border: 2px solid #fff;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    margin: 10px;
+}
+
+.play-button:hover,
+.video-trigger:hover .play-button {
+    background-color: rgba(115, 133, 159, 0.5);
+    opacity: 1;
+}
+
+.play-button:before {
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 37px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 19px solid #fff;
 }
 
 /* Wide */

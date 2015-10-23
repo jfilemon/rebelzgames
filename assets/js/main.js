@@ -255,6 +255,27 @@
                 $window.trigger('resize');
             });
 
+        $('.video-trigger').on('click', function(e) {
+            var $self = $(this),
+                id = $self.data('id'),
+                src = $self.data('src'),
+                poster = $self.data('poster'),
+                $video;
+
+            $video = $('<video id="'+id+'" class="video-js vjs-default-skin" controls poster="'+poster+'"></video>');
+            $video.append($('<source src="'+src+'.mp4" type="video/mp4"/>'));
+            $video.append($('<source src="'+src+'.ogv" type="video/ogg"/>'));
+
+            $self.after($video);
+            $self.remove();
+
+            videojs(id, {
+                'aspectRatio': "640:267"
+            }, function(){
+                this.play();
+            });
+        });
+
         //$('.kickstarter').on("click", function(e) {
         //    if (!$(this).hasClass('open') && skel.breakpointIds.indexOf("mobile") > -1) {
         //        e.preventDefault();
