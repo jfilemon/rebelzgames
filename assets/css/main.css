@@ -4100,6 +4100,13 @@ body.is-touch .poptrox-popup .closer {
     margin: 10px;
 }
 
+.container.gallery .video-js {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
 .play-button:hover,
 .video-trigger:hover .play-button {
     background-color: rgba(115, 133, 159, 0.5);
