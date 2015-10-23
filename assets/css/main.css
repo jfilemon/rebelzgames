@@ -4111,6 +4111,16 @@ body.is-touch .poptrox-popup .closer {
     border-left: 19px solid #fff;
 }
 
+.kickstarter .click {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 210px;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
 @media screen and (min-width: 1920px) {
     #intro-content {
         margin-top: 60px;
@@ -4416,6 +4426,14 @@ body.is-touch .poptrox-popup .closer {
     .foto {
         padding-top: 54px;
         padding-left: 0;
+    }
+
+    .kickstarter .click {
+        display: block;
+        position: absolute;
+        width: 220px;
+        height: 50px;
+        z-index: 10;
     }
 
     /* Footer */

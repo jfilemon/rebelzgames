@@ -276,13 +276,11 @@
             });
         });
 
-        //$('.kickstarter').on("click", function(e) {
-        //    if (!$(this).hasClass('open') && skel.breakpointIds.indexOf("mobile") > -1) {
-        //        e.preventDefault();
-        //        $(this).addClass('open');
-        //        return false;
-        //    }
-        //});
+        $('.kickstarter .click').on("click", function(e) {
+            e.preventDefault();
+            $(this).parent().toggleClass('open');
+            return false;
+        });
 
     });
 
