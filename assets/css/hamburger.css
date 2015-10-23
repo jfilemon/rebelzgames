@@ -1,80 +1,104 @@
+/*** Shy menu ***/
+* {
+    -moz-transition: all .4s cubic-bezier(.1, .7, .3, 1);
+    -webkit-transition: all .4s cubic-bezier(.1, .7, .3, 1);
+    -o-transition: all .4s cubic-bezier(.1, .7, .3, 1);
+    -ms-transition: all .4s cubic-bezier(.1, .7, .3, 1);
+    transition: all .4s cubic-bezier(.1, .7, .3, 1);
+}
 
-.mobile {
-  display: none;
-  position: fixed;
-  width: 100%;
-  top: 0;
+ul {
+    list-style: none;
+    margin: 0 0 0 15px;
+    padding: 0;
 }
-.mobile div {
-  display: none;
-}
-.mobile button {
-     position: absolute;
-    float: left;
-    top: 10px;
-    left: 30px;
-    border: 0;
-    text-indent: 200%;
-    overflow: hidden;
-    background: rgba(193,242,12,0.9) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-size: 80%;
-    width: 40px;
-    height: 51px;
-    outline: none;
-    -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
 
-}
-.mobile button.expanded {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  
-  border: 0;
-}
-.mobile a {
-  display: block;
-  background-color: #111;
-  color: #fff;
-}
-a {
- 
-  text-align: center;
-  padding: 3px 0;
-  text-decoration: none;
-  color: #fff;
-  
-
-  font-weight: bold;
-
-}
-a:hover,
-a:active,
-a:focus {
-  
-}
-.desktop {
-  display: block;
-  overflow: hidden;
-}
-.desktop a {
-  width: 25%;
-  float: left;
-  box-sizing: border-box;
-}
-.desktop a:last-child {
-  border-right: none;
-}
-article {
-  padding: 0 30px 15px;
-}
-@media (max-width: 950px) {
-  .mobile {
-    display: block;
-  }
-  .desktop {
+.shy-menu {
     display: none;
-  }
+    height: 50px;
+    padding: 5px;
+    left: 18px;
+    top: 7px;
+    width: 55px;
+    position: absolute;
+    background-color: rgba(33, 40, 44, .1);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.shy-menu.is-open,
+.shy-menu:hover {
+    background-color: rgba(33, 40, 44, 1);
+}
+
+.shy-menu.is-open {
+    height: auto;
+    width: 140px;
+    position: absolute;
+}
+
+.shy-menu-panel {
+    margin-left: -400px;
+}
+
+.is-open .shy-menu-panel {
+    margin-left: 0;
+}
+
+/*** Hamburger ***/
+.shy-menu-hamburger {
+    position: relative;
+    left: 8px;
+    top: 3px;
+    width: 54px;
+    height: 54px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 736px) {
+    .shy-menu {
+        display: block;
+    }
+}
+
+.shy-menu-hamburger > .layer {
+    background-color: #fff;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    overflow: hidden;
+    position: absolute;
+    left: 5px;
+    width: 18px;
+}
+
+.shy-menu-hamburger .layer.top {
+    top: 9px;
+}
+
+.is-open .shy-menu-hamburger .layer.top {
+    top: 17px;
+    left: 5px;
+    transform: rotate(45deg);
+}
+
+.shy-menu-hamburger .layer.mid {
+    top: 16px;
+}
+
+.is-open .shy-menu-hamburger .layer.mid {
+    opacity: 0;
+    left: 0;
+}
+
+.shy-menu-hamburger .layer.btm {
+    top: 23px;
+}
+
+.is-open .shy-menu-hamburger .layer.btm {
+    top: 17px;
+    left: 5px;
+    transform: rotate(-45deg);
 }
