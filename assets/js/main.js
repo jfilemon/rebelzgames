@@ -59,6 +59,9 @@
         // Gallery.
         $window.on('load', function() {
             $('.gallery').poptrox({
+                preload: true,
+                usePopupLoader: false,
+                fadeSpeed: 0,
                 baseZIndex: 10001,
                 useBodyOverflow: false,
                 usePopupEasyClose: false,
@@ -251,6 +254,14 @@
             .load(function() {
                 $window.trigger('resize');
             });
+
+        //$('.kickstarter').on("click", function(e) {
+        //    if (!$(this).hasClass('open') && skel.breakpointIds.indexOf("mobile") > -1) {
+        //        e.preventDefault();
+        //        $(this).addClass('open');
+        //        return false;
+        //    }
+        //});
 
     });
 
