@@ -2955,6 +2955,10 @@ button.style2.down {
     height: 100%;
 }
 
+.main.min-fullscreen {
+    min-height: 100%;
+}
+
 .main.style1 {
     text-align: center;
     padding: 0em 0 3em 0;
@@ -4584,7 +4588,7 @@ h3.light {
 }
 
 }
-.title {    /* the styles below will affect the title next to the numbers, i.e., “Days”, “Hours”, etc. */
+.title {    /* the styles below will affect the title next to the numbers, i.e., ï¿½Daysï¿½, ï¿½Hoursï¿½, etc. */
     margin: 12px 0px 0px 0px;
     padding: 0px 8px 0px 3px;
     text-align: left;
