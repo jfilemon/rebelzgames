@@ -81,7 +81,15 @@ body {
 }
 
 /* Containers */
-
+.background_container {
+    background-color: transparent;
+    background-image: url("../../images/fulls/party_people3.svg"), url("../../images/black.gif");
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat, repeat;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -2547,18 +2555,20 @@ article:last-child {
 }
 
 #video, .main-video {
-    width: 70%;
+    width: 40%;
     margin: auto;
 }
 
 .linkje a {
-    color: #444;
+    color: #3A5795;
     text-align: center;
 }
 
 .linkje {
     margin: auto;
     width: 100%;
+    font-size: 1.2em;
+    line-height: 2em;
 }
 
 .video:hover {
@@ -2951,10 +2961,10 @@ button.style2.down {
 }
 
 .main.style1 h2 {
-    font-size: 4.25em;
     line-height: 1em;
-    margin-top: 1em;
     letter-spacing: -4px;
+    margin-top: 0.6em;
+    font-size: 4.25em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2965,26 +2975,13 @@ button.style2.down {
 
 @media screen and (max-width: 1200px) {
     .main.style1 h2 {
-        margin-top: 2.5em;
+        margin-top: 1.3em;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .main.style1 h2 {
         margin-top: 1em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .main.style1 h2 {
-        margin-top: 1em;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .main.style1 h2 {
-        margin-top: 0;
-
     }
 }
 
@@ -2996,6 +2993,23 @@ button.style2.down {
         letter-spacing: -4px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .main.style1 h2 {
+        margin-top: 1em;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .main.style1 h2 {
+        margin-top: 0;
+
+    }
+}
+
+
 
 .main.style1:before {
     content: '';
@@ -3537,10 +3551,11 @@ body {
 
 #logo {;
     padding-left: 1em;
-    top: 0;
-    height: 6em;
+    top: 0px;
     line-height: 3em;
     letter-spacing: -1px;
+    height: 4.5em;
+    margin-bottom: 0.6em;
 }
 
 #logo a {
@@ -3744,18 +3759,7 @@ body {
     overflow: hidden;
 }
 
-#contact .box {
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    -moz-transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    position: relative;
-    bottom: 0;
-}
+
 
 #contact .row {
     margin: 0;
@@ -4221,7 +4225,7 @@ body.is-touch .poptrox-popup .closer {
     }
 
     #video {
-        width: 100%;
+        width: 60%;
     }
 
     /* Footer */
@@ -4291,6 +4295,13 @@ body.is-touch .poptrox-popup .closer {
     h2 {
         font-size: 1.5em;
         letter-spacing: -1px;
+    }
+
+    #intro-content {
+        margin-top: 0px;
+    }
+    #video {
+        width: 100%;
     }
 
     .button.down.anchored {
@@ -4382,6 +4393,7 @@ body.is-touch .poptrox-popup .closer {
         top: 0;
         height: auto;
         line-height: 1.5em;
+
     }
 
     #logo a {
@@ -4556,3 +4568,48 @@ h3.light {
 .hidden {
     display: none;
 }
+
+.numbers{
+    text-align: right;
+    font-weight: bold;
+    color: #F00;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 10px 30px 10px 15px;
+    background-color: #FFF;
+    border-radius: 10px;
+    font-size: 18pt;
+    line-height: 1.5em;
+}
+
+}
+.title {    /* the styles below will affect the title next to the numbers, i.e., “Days”, “Hours”, etc. */
+    margin: 12px 0px 0px 0px;
+    padding: 0px 8px 0px 3px;
+    text-align: left;
+    font-size: 1em;
+    font-weight: light;    /* options are normal, bold, bolder, lighter */
+    color: #FCD140;       /* change color using the hexadecimal color codes for HTML */
+}
+#table {
+    border-radius: 10px;
+    width: auto;
+    margin: 10px auto;
+    font-weight: 600;
+    color: #999;
+
+}
+.timer_kickstarter{
+    font-size: 15pt;
+    letter-spacing: 1px;
+
+}
+.image_contact img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+
+ }

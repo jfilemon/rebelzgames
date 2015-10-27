@@ -54,6 +54,8 @@
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="assets/css/ie9.css"/>
     <![endif]-->
+
+
 </head>
 <body>
 <!-- Header -->
@@ -114,6 +116,7 @@
         <span class="click"></span>
         <a href="#">
             <div class="mad">KICKSTARTER</div>
+
             <div class="foto">
                 <img src="images/fulls/project-image.gif" width="280">
             </div>
@@ -126,13 +129,38 @@
 
     <div id="intro-content" class="content container 75%">
         <header>
+
             <h2>KING OF PARTY GAMES</h2>
         </header>
+
+        <body onload="countdown(year,month,day,hour,minute);">
+        <table id="table" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td colspan="8"><div class="numbers" id="count2" style="text-align: center;">Time to kickoff</div></td>
+            </tr>
+            <tr>
+                <div class="timer_kickstarter"><strong>MadPong, countdown to Kickstarter launch...</strong></div>
+                <td align="right"><div class="numbers" id="dday"></div></td>
+                <td align="left"><div class="title" id="days">D</div></td>
+                <td align="right"><div class="numbers" id="dhour"></div></td>
+                <td align="left"><div class="title" id="hours">H</div></td>
+                <td align="right"><div class="numbers" id="dmin"></div></td>
+                <td align="left"><div class="title" id="minutes">M</div></td>
+                <td align="right"><div class="numbers" id="dsec"></div></td>
+                <td align="left"><div class="title" id="seconds">S</div></td>
+            </tr>
+        </table>
+
+        </body>
+
+
+
         <p><strong><a href="#">Rebelz Games</a></strong> is a fresh, daring, innovative and dynamic entertainment
             company based in The Netherlands. We operate from the great city of Rotterdam with a multi-cultural staff
             which is the key and life line in our products.
             In an era where online gaming is the standard, we bring back the excitement, brotherhood and love that we
             used to experience playing board games.
+
         </p>
 
         <div id="video">
@@ -157,7 +185,7 @@
         <p class="inside_text">Daring, innovative and unique are keywords for our games. We're taught to color inside
             the lines but we say screw that. We color where we want, we stand where we want to and we play how we want
             to play. Join our Rebelz crew on <a href="https://www.facebook.com/Rebelz-Games-132016243523838/"
-                                                target="_blank"><span style="color:#3a5795">FACEBOOK</span>
+                                                target="_blank"><span style="color:#3a5795"><strong>FACEBOOK</strong></span>
             </a>
         </p>
 
@@ -191,7 +219,7 @@
         <header>
             <h2>NEWS</h2>
         </header>
-        <img src="video/project-image.png" title="The Anonymous Red" alt="" width="60%"/></a>
+        <img src="images/fulls/project-image.png" title="The Anonymous Red" alt="" width="60%"/></a>
         <h2 class="light">MadPong coming soon!</h2>
 
         <p class="light">MadPong, the latest creation of Rebelz Games, will be available on the market starting the 3rd
@@ -205,7 +233,7 @@
 
     <div class="infographic">
         <a href="#" data-remodal-target="modal">
-            <img src="images/fulls/infographic.alternatief.gif">
+            <img src="images/fulls/infographic.png">
         </a>
 
         <div class="remodal" data-remodal-id="modal">
@@ -225,7 +253,7 @@
             Beer pong is the most popular party drinking game in the world. It is so popular that it has become a sport,
             with its own world championship.<br><br>
             We love challenges and making thins better so we thought: let's combine the best elements of MadWish with
-            traditional Beer pong and created MadPong for you! It's time for <span style="color:red;">FULL MADNESS!!!</span>
+            traditional Beer pong and created MadPong for you! <br>It's time for <span style="color:red;"><strong>FULL MADNESS!!!</strong></span>
         </p>
     </div>
     <a href="#five" class="button style2 down anchored">Next</a>
@@ -334,7 +362,7 @@
 <section id="five" class="main style3 primary">
     <div class="content container">
         <header>
-            <h2>Soon on Television</h2>
+            <h2>Soon on Tv...</h2>
 
             <p>Creating original concepts is what keeps us rolling. Our goal for 2016 is to have one of the four TV
                 formats on your screen.
@@ -456,7 +484,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row 0% images">
+
                     <div class="6u 12u(mobile)">
                         <a href="video/Rebelz-team.jpg" class="image fit from-left"><img
                             src="video/Rebelz-team-small.jpg" title="THE REBELZ TEAM" alt="THE REBELZ TEAM"/></a>
@@ -480,7 +508,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+
         </div>
         <a href="#six" class="button style2 down anchored">Next</a>
     </div>
@@ -548,23 +576,27 @@
             <!--</div>-->
         </header>
         <div class="guy"><img src="images/fulls/dare_guy.svg"></div>
+        <div class="background_container">
         <div class="box container 75%">
             <!-- Contact Form -->
-            <form method="post" action="#">
-                <div class="row 50%">
-                    Address:<br>
-                    Creative factory<br>
-                    Maashaven Zuidzijde 2<br>
-                    3081 AE Rotterdam <br>
-                    <br>
-                    Questions, notices, requests, suggestions and ideas can be mailed to
+            <div class="image_contact"><img src="images/fulls/creative_factory.jpg" width="250"> </div>
+                <div class="contact_text">
+                    <ul>
+                        <li> <strong>Address:</strong></li>
+                        <li> Creative factory</li>
+                        <li> Maashaven Zuidzijde 2</li>
+                        <li> 3081 AE Rotterdam</li><br>
+
+
+                        <li><strong>Questions, notices, requests, <br>suggestions and ideas can be mailed to</strong></li>
+                    </ul>
 
                     <div class=linkje>
                         <a href="mailto:info@rebelzgames.com">info@rebelzgames.com</a>
                     </div>
-                </div>
-            </form>
         </div>
+
+    </div>
     </div>
     </div>
 </section><!--
@@ -625,12 +657,14 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/prefixfree.min.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/timer.js"></script>
 <!--<script src="assets/js/video.js"></script>-->
 <script src="http://vjs.zencdn.net/5.0.0/video.js"></script>
 <script src="assets/js/hamburger.js"></script>
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script>
 <![endif]-->
+
 
 </body>
 </html>
