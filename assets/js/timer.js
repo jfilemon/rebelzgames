@@ -58,6 +58,10 @@ function countdown(yr,m,d,hr,min){
         return;
     }
     else {
+        dday = pad(dday, 2);
+        dhour = pad(dhour, 2);
+        dmin = pad(dmin, 2);
+        dsec = pad(dsec, 2);
         document.getElementById('count2').style.display="none";
         document.getElementById('dday').innerHTML=dday;
         document.getElementById('dhour').innerHTML=dhour;
@@ -65,4 +69,10 @@ function countdown(yr,m,d,hr,min){
         document.getElementById('dsec').innerHTML=dsec;
         setTimeout("countdown(theyear,themonth,theday,thehour,theminute)",1000);
     }
+}
+
+function pad(num, size) {
+    var s = num+"";
+    while (s.length < size) s = "0" + s;
+    return s;
 }
