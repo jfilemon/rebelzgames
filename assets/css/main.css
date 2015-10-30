@@ -9,6 +9,7 @@
 
 /* Reset */
 
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -48,6 +49,10 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+#voorwaarden{
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0% 0%;
+}
+
 .koppen {
     font-size: 2.25em;
     letter-spacing: -2px;
@@ -72,6 +77,154 @@ body {
     -o-transition: 1s ease-in-out;
 }
 
+
+/* SHOP */
+
+.shop_content {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 6em;
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+    padding: 2em 2em 5em 2em;
+}
+
+.button_shop_pay {
+    padding: 10px 20px 10px 20px;
+    color: #2a3403;
+    background-color: #C1F20C;
+    font-weight: 800;
+    font-size: 24px;
+    width: 200px;
+    float: right;
+    border-radius: 10px;
+    margin: 0.5em;
+}
+
+.button_shop_pay:hover {
+    color: #2a3403;
+    background-color: #fff;
+}
+
+.button_shop_empty {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #222;
+    font-size: 24px;
+    width: 200px;
+    float: right;
+    margin: 0.5em;
+
+}
+
+.button_shop_empty:hover {
+    color: #222;
+    background-color: #fff;
+
+}
+
+.user_lic{
+    background-color: #222;
+    border: 0;
+    border-radius:5px ;
+    padding: 5px;
+    margin: 10px;
+    width: 60px;
+    color: #fff;
+}
+
+
+th, td:nth-child(2) {
+    border: 0;
+}
+
+table {
+    margin: 15px 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    table-layout: fixed;
+    width: 100%; /* must have this set */
+}
+
+.shop_content_inside {
+    border: 0.5px solid #333;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    line-height: 2em;
+}
+
+.shop_titels{
+    font-size: 1em;
+    line-height: 5em;
+    font-family:'Source Sans Pro', sans-serif;
+    color: #C1F20C;
+}
+
+.info_shop_content {
+
+}
+
+.shop_content_discription {
+    text-align: left;
+}
+
+.sturdy td:nth-child(1),
+.sturdy td:nth-child(3) {
+    width: 25%;
+}
+
+.sturdy td:nth-child(2) {
+    width: 50%;
+}
+
+.nobreak {
+    white-space: nowrap;
+}
+
+.wider td {
+    width: 300px;
+}
+
+.ignoreyou td:nth-child(1) {
+    width: 10px;
+}
+
+.ignoreyou td:nth-child(2) {
+    width: 30px;
+}
+
+.cut-off th:nth-child(1) {
+    width: 75%;
+}
+
+.cut-off td:nth-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cut-off th:nth-child(2) {
+    width: 25%;
+}
+
+.cut-off td:nth-child(2) span {
+    display: block;
+
+}
+
+.hide td {
+    overflow: hidden;
+}
+
+.scroll-code td {
+    overflow: auto;
+}
+
+
+
 /* Box Model */
 
 *, *:before, *:after {
@@ -90,6 +243,7 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat, repeat;
 }
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -128,6 +282,7 @@ body {
 .container {
     width: 1440px;
 }
+
 
 @media screen and (max-width: 1920px) {
 
@@ -205,7 +360,7 @@ body {
  }
 
     .container {
-        width: 1200px;
+        width: 1000px;
     }
 
 }
@@ -2306,9 +2461,10 @@ html {
 }
 
 .small {
-    color: #fcd140;
+    color: red;
     font-size: 1.3em;
     float: left;
+    margin-left: -17px;
 
 }
 
@@ -2960,7 +3116,7 @@ button.style2.down {
 
 .main.style1 {
     text-align: center;
-    padding: 0em 0 3em 0;
+
 }
 
 .main.style1 h2 {
@@ -2995,6 +3151,8 @@ button.style2.down {
         margin-top: 1.5em;
         letter-spacing: -4px;
     }
+
+
 }
 
 @media screen and (max-width: 900px) {
@@ -3003,16 +3161,15 @@ button.style2.down {
     }
 }
 
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .main.style1 h2 {
         margin-top: 0;
 
     }
+    #voorwaarden {
+        margin-top: -13em;
+    }
 }
-
-
 
 .main.style1:before {
     content: '';
@@ -3535,11 +3692,15 @@ body.is-loading:after {
 }
 
 .header_inside {
-    top: -7em;
     margin-top: 5em;
-    margin-bottom: 5em;
-    position: relative;
 
+}
+
+@media screen and (max-width: 700px) {
+    .header_inside {
+        margin-top: 0em;
+
+    }
 }
 
 body {
@@ -3550,6 +3711,8 @@ body {
     #logo {
         text-align: center;
     }
+
+
 }
 
 #logo {;
@@ -3568,6 +3731,7 @@ body {
 #logo .desktop {
     display: inline;
 }
+
 #logo .mobile {
     display: none;
 }
@@ -3655,6 +3819,10 @@ body {
 }
 
 @media screen and (max-width: 740px) {
+    .shop_content {
+        padding:1em;
+
+    }
 
     #intro {
         background-image: none;
@@ -3761,8 +3929,6 @@ body {
 
     overflow: hidden;
 }
-
-
 
 #contact .row {
     margin: 0;
@@ -4303,6 +4469,7 @@ body.is-touch .poptrox-popup .closer {
     #intro-content {
         margin-top: 0px;
     }
+
     #video {
         width: 100%;
     }
@@ -4352,6 +4519,7 @@ body.is-touch .poptrox-popup .closer {
         left: 0% !important;
         text-align: center;
     }
+
     .main.style2.left .content, .main.style2.right .content {
         border-radius: 20px;
     }
@@ -4406,6 +4574,7 @@ body.is-touch .poptrox-popup .closer {
     #logo .desktop {
         display: none;
     }
+
     #logo .mobile {
         display: inline;
     }
@@ -4527,7 +4696,7 @@ h3.light {
     width: 30%;
     background-color: #222;
     padding: 80px;
-    margin-top: 145px;
+    margin-top: 5em;
     border-radius: 15px;
 }
 
@@ -4556,6 +4725,7 @@ h3.light {
     h2.light {
         text-align: center;
     }
+
 }
 
 .player:-webkit-full-screen {
@@ -4572,7 +4742,7 @@ h3.light {
     display: none;
 }
 
-.numbers{
+.numbers {
     text-align: right;
     font-weight: bold;
     color: #CD1E0E;
@@ -4587,14 +4757,16 @@ h3.light {
 }
 
 }
-.title {    /* the styles below will affect the title next to the numbers, i.e., �Days�, �Hours�, etc. */
+.title {
+    /* the styles below will affect the title next to the numbers, i.e., �Days�, �Hours�, etc. */
     margin: 12px 0px 0px 0px;
     padding: 0px 8px 0px 3px;
     text-align: left;
     font-size: 1em;
-    font-weight: light;    /* options are normal, bold, bolder, lighter */
-    color: #FCD140;       /* change color using the hexadecimal color codes for HTML */
+    font-weight: light; /* options are normal, bold, bolder, lighter */
+    color: #FCD140; /* change color using the hexadecimal color codes for HTML */
 }
+
 #table {
     border-radius: 10px;
     width: auto;
@@ -4603,22 +4775,52 @@ h3.light {
     color: #999;
 
 }
-.timer_kickstarter{
+
+.timer_kickstarter {
     font-size: 15pt;
     letter-spacing: 1px;
 
 }
-.image_contact img{
+
+.image_contact img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
 }
 
+}
 
- }
-
-.watch_movie_text{
+.watch_movie_text {
     text-shadow: 3px 3px 6px #222;
     color: #000;
 
+}
+
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 1000%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+    padding: 16px;
+    border: 0.25px solid #fff;
+    background-color: #000;
+    z-index: 1002;
+    overflow: auto;
 }
