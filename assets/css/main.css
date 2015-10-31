@@ -2970,8 +2970,7 @@ button {
     transition: all 0.2s ease-in-out;
     background-color: #c1f20c;
     border: 0;
-    border-radius: 3.5em;
-    margin-top: 25px;
+    border-radius: 2.5em;
     font-weight: 600;
     color: #2a3403;
     cursor: pointer;
@@ -4693,10 +4692,10 @@ h3.light {
 .inscrhijven {
     position: absolute;
     margin-left: 58%;
-    width: 30%;
+    width: auto;
     background-color: #222;
-    padding: 80px;
-    margin-top: 5em;
+    padding: 51px;
+    margin-top: 2em;
     border-radius: 15px;
 }
 
@@ -4823,4 +4822,8 @@ h3.light {
     background-color: #000;
     z-index: 1002;
     overflow: auto;
+}
+
+.actions:hover{
+    color: #fff;
 }
