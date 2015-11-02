@@ -18,8 +18,8 @@ var current="ITS ON KICKSTARTER!";    //-->enter what you want the script to dis
 var year=2015;    //-->Enter the count down target date YEAR
 var month=11;     //-->Enter the count down target date MONTH
 var day=3;       //-->Enter the count down target date DAY
-var hour=1;      //-->Enter the count down target date HOUR (24 hour clock)
-var minute=38;    //-->Enter the count down target date MINUTE
+var hour=9;      //-->Enter the count down target date HOUR (24 hour clock)
+var minute=60;    //-->Enter the count down target date MINUTE
 var tz=-5;        //-->Offset for your timezone in hours from UTC (see http://wwp.greenwichmeantime.com/index.htm to find the timezone offset for your location)
 
 //-->    DO NOT CHANGE THE CODE BELOW!    <--

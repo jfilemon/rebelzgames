@@ -113,8 +113,27 @@
             <li><a href="#three"><span class="white bold">/// </span>NEWS</a></li>
             <li><a href="#one"><span class="white bold">/// </span>MADPONG</a></li>
             <li><a href="#work"><span class="white bold">/// </span>GAMES</a></li>
-            <li><a href="#five"><span class="white bold">/// </span>TV FORMATS</a></li>
-            <li><a href="http://spin2play.com/"><span class="white bold">/// </span>MOBILE APP</a></li>
+            <li><a href="#five"><span class="white bold">/// </span>TV FORMAT</a></li>
+            <li><a href="javascript:void(0)"
+                   onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><span
+                    class="white bold">/// </span>MOBILE APP</a>
+
+                <div id="light" class="white_content">
+                    <a href="http://www.rebelzgames.com"><img src="images/thumbs/madwish logo website.png" width="100%"  ></a><br>
+                    <img src="images/thumbs/download free app slogan.png" width="30%" style="margin-top:12em;"><br><br>
+                    <a href="https://itunes.apple.com/us/app/madwish-free/id448788613?mt=8" target="_blank"
+                       style="padding:0 25px;display: inline-block;"><img src="images/thumbs/itunes link.png"
+                                                                          width="100%"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.rebelzgames.madwish" target="_blank"
+                       style="padding:0 25px;display: inline-block;"><img src="images/thumbs/android link.png"
+                                                                          width="100%"></a>
+
+
+                    <a href="javascript:void(0)"
+                       onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">CLOSE</a>
+                </div>
+                <div id="fade" class="black_overlay"></div>
+            </li>
             <li><a href="#contact"><span class="white bold">/// </span>CONTACT</a></li>
         </ul>
     </nav>
@@ -135,9 +154,11 @@
 <section id="intro" class="main style1 dark min-fullscreen">
 
     <div id="intro-content" class="content container 75%">
-        <header>
-            <h2>KING OF PARTY GAMES</h2>
-        </header>
+        <div class="header_inside">
+            <header>
+                <h2>KING OF PARTY GAMES</h2>
+            </header>
+        </div>
 
         <body onload="countdown(year,month,day,hour,minute);">
         <table id="table" cellspacing="0" cellpadding="0" border="0">
@@ -186,6 +207,7 @@
 
         </p>
 
+
         <div id="video">
             <div class="video-trigger" data-id="my_video_1" data-poster="video/logo.png" data-src="video/madpong7">
                 <img src="video/logo.png" alt="Rebelz Games"/>
@@ -196,8 +218,9 @@
         <footer>
         </footer>
     </div>
-    <a href="#two" class="button style2 down anchored">Next</a>
 </section>
+<!-- <a href="#two" class="button style2 down anchored">Next</a>
+
 <!-- Two -->
 <section id="two" class="main style2 right dark min-fullscreen">
     <div class="content box style2">
@@ -229,14 +252,30 @@
 
     <div class="inscrhijven">
         <h3 class="light">STAY UP TO DATE!</h3>
-        <ul class="actions">
-            <li><a href="https://twitter.com/rebelzgames" class="icon fa-twitter fa-2x" target="blank"><span
-                    class="label">Twitter</span></a></li>
-            <li><a href="https://www.facebook.com/Rebelz-Games-132016243523838/" class="icon fa-facebook fa-2x"
-                   target="blank"><span class="label">Facebook</span></a></li>
-            <li><a href="https://instagram.com/rebelzgames/" class="icon fa-instagram fa-2x" target="blank"><span
-                    class="label">Instagram</span></a></li>
-        </ul>
+
+
+        <form method="post" action="#">
+            <div class="row 50%">
+                <div class="12u 12u(mobile)"><input type="email" name="email" placeholder="Email"/></div>
+            </div>
+
+            <div class="row">
+                <div class="12u">
+                    <ul class="actions" style=" margin: 0;">
+                        <li><input type="submit" value="SUBSCRIBE "/></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="actions" style=" margin-top: 1em;">
+                <li><a href="https://twitter.com/rebelzgames" class="icon fa-twitter fa-2x" target="blank"><span
+                        class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/Rebelz-Games-132016243523838/" class="icon fa-facebook fa-2x"
+                       target="blank"><span class="label">Facebook</span></a></li>
+                <li><a href="https://instagram.com/rebelzgames/" class="icon fa-instagram fa-2x" target="blank"><span
+                        class="label">Instagram</span></a></li>
+            </ul>
+
+        </form>
     </div>
 
     <div class="content box style2">
@@ -313,16 +352,27 @@
                 beautiful or smile 24/7" in Google. If you find images of people that fit these words, it's probably us:
                 'The King of Party Games', at your service!
             </p>
+            <img src="images/thumbs/madwish logo website.png" width="300" style=" margin-top:50px;">
+
+            <p>Download our mobile App! <a href="javascript:void(0)"
+                                           onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                <h2>Click here</h2></a></p>
+            <div id="light" class="white_content"><a href="javascript:void(0)"
+                                                     onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+            </div>
+            <div id="fade" class="black_overlay"></div>
         </header>
 
         <div class="container 75% gallery">
             <div class="row 0% images">
                 <div class="6u 12u(mobile)">
-                    <a href="images/fulls/product6.png" class="image fit from-left">
+                    <a href="images/fulls/product6.png" class="image fit from-left item">
                         <div class="buy">INFO</div>
                         <!--<div class="info">INFO</div>-->
-                        <img src="images/thumbs/tester.png" title="MadWish Pro is a must for any party animal!" alt=""/>
+                        <img src="images/thumbs/madwish_party.png" title="MadWish Pro is a must for any party animal!"
+                             alt=""/>
                     </a>
+                    <a href="index.html">INFO</a>
                     <ul>
                         <div class="yellow_text">
                             <li><span class="white bold">/// </span>MADWISH PRO BOARD 18+
@@ -331,12 +381,13 @@
                     </ul>
                 </div>
                 <div class="6u 12u(mobile)">
-                    <a href="images/fulls/contstruction/product1.png" class="image fit from-left">
+                    <a href="images/fulls/contstruction/product1.png" class="image fit from-left item">
                         <div class="buy">INFO</div>
                         <!--<div class="info">INFO</div>-->
                         <img src="images/thumbs/madwish_original_board_game_two.png"
                              title="MadWish OG still under development, will be soon available." alt=""/>
                     </a>
+                    <a href="index.html">INFO</a>
                     <ul>
                         <div class="yellow_text">
                             <li><span class="white bold">/// </span>MadWish Original board game 18+
@@ -404,9 +455,38 @@
                         </li>
                     </ul>
                 </div>
+                <div class="6u 12u(mobile)">
+                    <a href="images/fulls/product11.png" class="image fit from-left">
+                        <div class="buy">INFO</div>
+                        <!--<div class="info">INFO</div>-->
+                        <img src="images/thumbs/madwish_hen_board_game.png"
+                             title="MadWish Beach turns your day at the beach into a party!" alt=""/>
+                    </a>
+                    <ul>
+                        <div class="yellow_text">
+                            <li><span class="white bold">/// </span>MadWish Beach board game 18+
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="6u 12u(mobile)">
+                    <a href="images/fulls/madpong.png" class="image fit from-left">
+                        <div class="buy">INFO</div>
+                        <!--<div class="info">INFO</div>-->
+                        <img src="images/thumbs/madpong.png"
+                             title="MadWish Beach turns your day at the beach into a party!" alt=""/>
+                    </a>
+                    <ul>
+                        <div class="yellow_text">
+                            <li><span class="white bold">/// </span>Mad Pong
+                        </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
     <a href="#five" class="button style2 down anchored">Next</a>
 </section>
 
@@ -572,7 +652,7 @@
 <section id="six" class="main style3 primary">
     <div class="content container">
         <header>
-            <h2>MEET THE REBELZ</h2>
+            <h2>Meet the Rebelz</h2>
 
             <p>The Rebelz are the ones that give color and personality to our games.
                 Each couple represents a different sub-culture and has its own characteristics.
@@ -697,9 +777,11 @@
         <li><a href="https://instagram.com/rebelzgames/" class="icon fa-instagram" target="blank"><span class="label">Instagram</span></a>
         </li>
     </ul>
+
     <!-- Menu -->
     <ul class="menu">
         <li>&copy; REBELZ</li>
+        <li><a href="voorwaarden.html"> TERMS AND CONDITIONS</a></li>
     </ul>
 </footer>
 <!-- Scripts -->
