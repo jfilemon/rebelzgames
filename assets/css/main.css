@@ -16,7 +16,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    /*vertical-align: baseline;*/
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -132,6 +132,7 @@ body {
     margin: 10px;
     width: 60px;
     color: #fff;
+    text-align: center;
 }
 
 
@@ -4826,4 +4827,12 @@ h3.light {
 
 .actions:hover{
     color: #fff;
+}
+
+.terms_conditions a{
+     color: #111111;
+ }
+
+.terms_conditions:hover a{
+    color: red;
 }

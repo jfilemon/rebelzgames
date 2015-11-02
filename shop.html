@@ -114,7 +114,27 @@
             <li><a href="index.html"><span class="white bold">/// </span>MADPONG</a></li>
             <li><a href="index.html"><span class="white bold">/// </span>GAMES</a></li>
             <li><a href="index.html"><span class="white bold">/// </span>TV FORMAT</a></li>
-            <li><a href="http://spin2play.com/"><span class="white bold">/// </span>MOBILE APP</a></li>
+            <li><a href="javascript:void(0)"
+                   onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><span
+                    class="white bold">/// </span>MOBILE APP</a>
+
+                <div id="light" class="white_content">
+                    <a href="index.html"><img src="images/thumbs/madwish logo website.png" width="100%"></a><br>
+                    <img src="images/thumbs/download free app slogan.png" width="30%" style="margin-top:12em;"><br><br>
+                    <a href="https://itunes.apple.com/us/app/madwish-free/id448788613?mt=8" target="_blank"
+                       style="padding:0 25px;display: inline-block;"><img src="images/thumbs/itunes link.png"
+                                                                          width="100%"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.rebelzgames.madwish" target="_blank"
+                       style="padding:0 25px;display: inline-block;"><img src="images/thumbs/android link.png"
+                                                                          width="100%"></a>
+
+
+                    <a href="javascript:void(0)"
+                       onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">CLOSE</a>
+                </div>
+                <div id="fade" class="black_overlay"></div>
+            </li>
+            </li>
             <li><a href="index.html"><span class="white bold">/// </span>CONTACT</a></li>
         </ul>
     </nav>
@@ -134,17 +154,21 @@
 <!-- Intro -->
 <section id="intro" class="main style3 dark min-fullscreen">
 
-    <div id="intro-content" class="content container 75%"><div class="header_inside">
-        <header>
-            <h2>Shopping cart</h2>
-        </header></div>
+    <div id="intro-content" class="content container 75%">
+        <div class="header_inside">
+            <header>
+                <h2>Shopping cart</h2>
+            </header>
+        </div>
 
         <div class="shop_content">
             <div class="titel_shop_content">
                 <table class="shop_content_inside">
                     <tr class="shop_titels">
-                        <th>NUMBERS</th>
+                        <th></th>
                         <th>TITLE</th>
+                        <th>NUMBERS</th>
+                        <th>PRICE</th>
                         <th>INFO</th>
                     </tr>
 
@@ -153,9 +177,12 @@
             <div class="info_shop_content">
                 <table class="shop_content_inside">
                     <tr>
-                        <th><input class="user_lic" type="number" min="0" max="99" step="0" value ="0"/></th>
+                        <th><img src="images/thumbs/madwish_party.png" width="100%" </th>
                         <th>lorump ipsum</th>
-                        <th class="shop_content_discription">dit is wat text bla test bal bla dit een stukje tekst hallo wereld! </th>
+                        <th><input class="user_lic" type="text" min="0" max="99" step="0" value="0"/></th>
+                        <th class="shop_content_discription">dit is wat text bla test bal bla dit een stukje tekst hallo
+                            wereld!
+                        </th>
                     </tr>
 
                 </table>
@@ -171,15 +198,15 @@
 
                 </table>
             </div>
-<div class="content_button_shop">
-            <div class="button_shop_pay">Pay</div>
-            <div class="button_shop_empty">Emty</div>
+            <div class="content_button_shop">
+                <div class="button_shop_pay">Pay</div>
+                <div class="button_shop_empty">Emty</div>
 
+            </div>
+
+            <footer>
+            </footer>
         </div>
-
-        <footer>
-        </footer>
-    </div>
 
 </section>
 <!-- Two -->
@@ -200,6 +227,7 @@
     <!-- Menu -->
     <ul class="menu">
         <li>&copy; REBELZ</li>
+        <li><a href="voorwaarden.html"> TERMS AND CONDITIONS</a></li>
     </ul>
 </footer>
 <!-- Scripts -->
