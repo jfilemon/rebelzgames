@@ -2641,18 +2641,20 @@ article:last-child {
 }
 
 /* Image */
-.buy {
 
-    position: absolute;
-    z-index: 10000;
+.buttons_webshop{
+    width: 100%;
+}
+
+.buy {
     font-weight: 600;
-    bottom: 0;
+    width:80px;
     padding: 10px 20px 10px 20px;
     color: #2a3403;
+    float: left;
     background-color: #c1f20c;
-    display: block;
     font-size: 24px;
-    margin-left: 2em;
+
 
 }
 
@@ -2664,17 +2666,14 @@ article:last-child {
 }
 
 .info {
-    position: absolute;
-    z-index: 10000;
     bottom: 0;
-    margin-left: 80px;
+    width:80px;
     padding: 10px 20px 10px 20px;
     color: #fff;
     background-color: #111;
     font-size: 24px;
+    float: left;
     font-weight: 200;
-    display: block;
-
 }
 
 .info:hover {
@@ -2707,6 +2706,8 @@ article:last-child {
     color: #e6bf3a;
     font-weight: 500;
     padding: 15px 0 0 0;
+    width: 100%;
+    float: left;
 
 }
 
