@@ -3153,7 +3153,6 @@ button.style2.down {
         letter-spacing: -4px;
     }
 
-
 }
 
 @media screen and (max-width: 900px) {
@@ -4444,6 +4443,8 @@ body.is-touch .poptrox-popup .closer {
         display: block;
         text-align: left
     }
+
+
 }
 
 /* Mobile */
@@ -4451,6 +4452,7 @@ body.is-touch .poptrox-popup .closer {
 @media screen and (max-width: 736px) {
 
     /* Basic */
+
     body {
         min-width: 320px;
         font-size: 12pt;
@@ -4825,6 +4827,7 @@ h3.light {
     z-index: 1002;
     overflow: auto;
 }
+
 
 .actions:hover{
     color: #fff;
