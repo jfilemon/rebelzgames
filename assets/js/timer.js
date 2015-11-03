@@ -14,7 +14,7 @@
  */
 
 /*  Change the items below to create your countdown target date and announcement once the target date and time are reached.  */
-var current="ITS ON KICKSTARTER!";    //-->enter what you want the script to display when the target date and time are reached, limit to 20 characters
+var current="Mad Pong is now available on Kickstarter!";    //-->enter what you want the script to display when the target date and time are reached, limit to 20 characters
 var year=2015;    //-->Enter the count down target date YEAR
 var month=11;     //-->Enter the count down target date MONTH
 var day=3;       //-->Enter the count down target date DAY
