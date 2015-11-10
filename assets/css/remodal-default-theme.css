@@ -41,11 +41,11 @@
   width: 100%;
   margin-bottom: 10px;
   padding: 35px;
-
-  transform: translate3d(0, 0, 0);
-
-  color: #2b2e38;
-  background: #fff;
+  transform: translate3d(0px, 0px, 0px);
+  color: #2B2E38;
+  background: #000 none repeat scroll 0% 0%;
+  border: 5px #fff solid;
+}
 }
 
 .remodal.remodal-is-opening,
